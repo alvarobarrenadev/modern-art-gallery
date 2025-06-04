@@ -1,8 +1,16 @@
 // Variables for the project
-$bp-tablet: 768px;
-$bp-tablet-horizontal: 1024px;
-$bp-desktop: 1200px;
-$bp-desktop-xl: 1440px;
+$base-font-size: 62.5%; // 10px base font size for easier rem calculations
+$bp-tablet: 76.8rem; // 768px
+$bp-tablet-horizontal: 102.4rem; // 1024px
+$bp-desktop: 120rem; // 1200px
+$bp-desktop-xl: 144rem; // 1440px
 
 // Variables for fonts
 $big-shoulders-font: "Big Shoulders", sans-serif;
+$outfit-font: "Outfit", sans-serif;
+
+// Variables for colors
+$orange: #D5966C;
+$black: #151515;
+$white: #FFF;
+$gray: #444;
