@@ -1,0 +1,12 @@
+@use '@abstracts/variables' as v;
+
+h1, h2, a {
+    font-family: v.$primary-font;
+    text-transform: uppercase;
+}
+
+p {
+    color: v.$gray;
+    line-height: 1.8;
+    font-weight: 350;
+}

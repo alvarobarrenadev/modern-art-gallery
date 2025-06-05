@@ -1,10 +1,11 @@
 @use '@abstracts/variables' as v;
 
 html {
-    font-family: v.$big-shoulders-font;
+    font-family: v.$secondary-font;
     font-size: v.$base-font-size;
 }
- 
+
 body {
     overflow-x: hidden;
+    font-size: 1.8rem;
 }

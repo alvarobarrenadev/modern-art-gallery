@@ -25,3 +25,27 @@
     }
   }
 }
+
+@mixin button {
+  display: inline-block;
+  background-color: v.$black;
+  color: v.$white;
+  font-size: 20px;
+  padding: 2.4rem 3.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.36rem;
+  padding-right: 9rem;
+}
+
+@mixin button--arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: v.$orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.4rem;
+}

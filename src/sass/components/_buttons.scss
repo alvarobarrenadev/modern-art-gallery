@@ -1,0 +1,23 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
+.btn {
+    @include mx.button;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: v.$orange;
+        
+        .btn__arrow {
+            background-color: v.$black;
+        }
+    }
+    
+    &__arrow {
+        @include mx.button--arrow;
+        transition: background-color 0.3s ease;
+    }
+}
