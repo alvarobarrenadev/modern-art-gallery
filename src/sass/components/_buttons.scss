@@ -3,9 +3,6 @@
 
 .btn {
     @include mx.button;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
     transition: background-color 0.3s ease;
     
     &:hover {

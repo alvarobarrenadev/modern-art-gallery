@@ -27,7 +27,9 @@
 }
 
 @mixin button {
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   background-color: v.$black;
   color: v.$white;
   font-size: 20px;

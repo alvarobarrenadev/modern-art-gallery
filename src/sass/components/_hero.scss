@@ -5,7 +5,12 @@
     flex-direction: column;
     gap: 3.2rem;
 
-    &__img {
+    &__container {
+        margin-inline: auto; // From left to right
+        padding-inline: 2rem; // From left to right
+    }
+
+    &__bg-img {
         background-image: url("/img/hero.png");
         height: 35dvh;
         background-size: cover;
@@ -34,11 +39,67 @@
             .btn {
                 margin-bottom: 12rem;
             }
+        }
+    }
 
-            // .btn--arrow {
-                
-            // }
+    &__gallery {
+        display: flex;
+        flex-direction: column;
+
+        &_img--1 {
+            background-image: url("/img/gallery1.png");
+            height: 35dvh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 2.5rem;
+        }
+        
+        &--title {
+            font-size: 5rem;
+            line-height: 2lh;
+            font-weight: 900;
+            margin-bottom: 2.1rem;
         }
 
+        &--description {
+            margin-bottom: 0;
+        }
+        
+        &_img--2 {
+            background-image: url("/img/gallery2.png");
+            height: 55dvh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        &_img--3 {
+            background-image: url("/img/gallery3.png");
+            height: 25dvh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 2.5rem;
+        }
+
+        &_container {
+            background-color: v.$black;
+            margin-bottom: 12rem;
+            padding-inline: 2.4rem;
+            padding-block: 4.8rem;
+
+            &--title {
+                color: v.$white;
+                font-size: 5rem;
+                line-height: 2lh;
+                font-weight: 900;
+                margin-bottom: 2.4rem;
+            }
+
+            &--description {
+                color: v.$white;
+            }
+        }
     }
 }
