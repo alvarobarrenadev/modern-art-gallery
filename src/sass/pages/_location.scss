@@ -1,0 +1,46 @@
+@use '@abstracts/variables' as v;
+
+.location {
+    //margin-inline: auto; // From left to right
+    // TODO: Tablet
+    //padding-inline: 2rem; // From left to right
+
+    &__img {
+        background-image: url("/img/maps.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 65dvh;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        background-color: v.$black;
+        padding-block: 4.8rem;
+        padding-inline: 1.6rem;
+
+        &--title {
+            font-size: 5rem;
+            color: v.$white;
+            margin-bottom: 4rem;
+        }
+
+        &--subtitle {
+            font-size: 3.2rem;
+            color: v.$orange;
+            margin-bottom: 2rem;
+        }
+
+        &--details {
+            display: flex;
+            flex-direction: column;
+            color: v.$white;
+            margin-bottom: 2rem;
+        }
+
+        &--description {
+            color: v.$white;
+        }
+    }
+}
