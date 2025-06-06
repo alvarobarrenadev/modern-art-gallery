@@ -3,6 +3,14 @@ import { resolve } from "path";
 
 export default defineConfig({
   base: "/modern-art-gallery/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        location: resolve(__dirname, 'location.html')
+      }
+    }
+  },
   resolve: {
     alias: {
       // Alias principal para la carpeta src
