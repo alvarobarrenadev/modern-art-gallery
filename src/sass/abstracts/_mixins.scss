@@ -26,6 +26,7 @@
   }
 }
 
+// Button Index
 @mixin button {
   position: relative;
   display: inline-flex;
@@ -52,7 +53,8 @@
   padding: 0 2.4rem;
 }
 
-@mixin button-reverse {
+// Button Location
+@mixin button-back {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -63,12 +65,12 @@
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.36rem;
-  padding-right: 9rem;
+  padding-left: 9rem;
 }
 
-@mixin button--arrow-reverse {
+@mixin button--arrow-back {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   height: 100%;
   background-color: v.$black;

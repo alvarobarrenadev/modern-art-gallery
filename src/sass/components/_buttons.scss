@@ -18,3 +18,21 @@
         transition: background-color 0.3s ease;
     }
 }
+
+.btn-back {
+    @include mx.button-back;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: v.$black;
+        
+        .btn-back__arrow {
+            background-color: v.$orange;
+        }
+    }
+    
+    &__arrow {
+        @include mx.button--arrow-back;
+        transition: background-color 0.3s ease;
+    }
+}
