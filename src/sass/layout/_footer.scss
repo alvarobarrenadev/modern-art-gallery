@@ -1,27 +1,61 @@
 @use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
 
 .footer {
     display: flex;
     flex-direction: column;
     background-color: v.$black;
     padding: 4.8rem 3.2rem;
+
+    @include mx.breakpoint(tablet) {
+        flex-direction: row;
+        gap: 6.5rem;
+        align-items: flex-start;
+    }
+
+    @include mx.breakpoint(desktop) {
+        padding: 8rem 16.5rem;
+        // gap: 14rem;
+    }
     
     &__logo {
         width: 40%;
         margin-bottom: 3.8rem;
         pointer-events: none;
+
+        @include mx.breakpoint(tablet) {
+            width: 20%;
+        }
+
+        @include mx.breakpoint(desktop) {
+            width: 50%;
+            margin-bottom: 0;
+        }
     }
     
     &__description {
         font-size: 1.6rem;
         margin-bottom: 3.8rem;
         color: v.$white;
+        
+        @include mx.breakpoint(tablet) {
+            max-width: 37%;
+        }
+        
+        @include mx.breakpoint(desktop) {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
     }
-
+    
     &__icons {
         display: flex;
         align-items: center;
         gap: 2rem;
+        
+        @include mx.breakpoint(tablet) {
+            margin-left: 6.8rem;
+        }
         
         a {
             display: inline-block;
@@ -63,23 +97,56 @@
     flex-direction: column;
     background-color: v.$orange;
     padding: 4.8rem 3.2rem;
+
+    @include mx.breakpoint(tablet) {
+        flex-direction: row;
+        gap: 6.5rem;
+        align-items: flex-start;
+    }
+
+    @include mx.breakpoint(desktop) {
+        padding: 8rem 16.5rem;
+        // gap: 14rem;
+    }
     
     &--logo {
         width: 40%;
         margin-bottom: 3.8rem;
         pointer-events: none;
+
+        @include mx.breakpoint(tablet) {
+            width: 20%;
+        }
+
+        @include mx.breakpoint(desktop) {
+            width: 50%;
+            margin-bottom: 0;
+        }
     }
     
     &--description {
         font-size: 1.6rem;
         margin-bottom: 3.8rem;
         color: v.$black;
+
+        @include mx.breakpoint(tablet) {
+            max-width: 37%;
+        }
+        
+        @include mx.breakpoint(desktop) {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
     }
 
     &--icons {
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        @include mx.breakpoint(tablet) {
+            margin-left: 6.8rem;
+        }
         
         a {
             display: inline-block;
