@@ -24,10 +24,10 @@
     transition: background-color 0.3s ease;
     
     &:hover {
-        background-color: v.$black;
+        background-color: v.$orange;
         
         .btn-back__arrow {
-            background-color: v.$orange;
+            background-color: v.$black;
         }
     }
     

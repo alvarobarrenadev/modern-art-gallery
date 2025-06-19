@@ -11,6 +11,7 @@
         flex-direction: row;
         gap: 6.5rem;
         align-items: flex-start;
+        padding: 5.6rem 3.4rem;
     }
 
     @include mx.breakpoint(desktop) {
@@ -102,6 +103,7 @@
         flex-direction: row;
         gap: 6.5rem;
         align-items: flex-start;
+        padding: 5.6rem 3.4rem;
     }
 
     @include mx.breakpoint(desktop) {
@@ -182,4 +184,3 @@
         }
     }
 }
-
